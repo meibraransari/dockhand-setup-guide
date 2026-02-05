@@ -1,6 +1,6 @@
 # 🐳 Dockhand - Modern Docker Management
 
-![Dockhand Banner](https://dockhand.pro/og-image.png)
+![Dockhand Banner](https://dockhand.pro/images/logo-dark.webp)
 
 > **Modern Docker management for everyone.** A powerful, intuitive Docker platform that makes container management simple, efficient, and beautiful. Perfect for homelabs, growing teams, and enterprises.
 
