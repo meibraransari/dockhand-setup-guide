@@ -196,6 +196,48 @@ Open and trustworthy:
 
 ---
 
+### 🆚 Dockhand vs Portainer — Feature & Benefit Comparison
+
+| Feature / Aspect                 | **Dockhand**                                                                                                        | **Portainer**                                                                       | **Why Dockhand Could Be Better**                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Primary Focus**                | Docker & Docker-Compose-centric management with stacks, metrics, logs, terminal, and file browsing. ([Dockhand][1]) | Docker + Docker Swarm + Kubernetes multi-environment platform. ([Portainer][2])     | Dockhand stays *simple and focused* on Docker without extra complexity unless needed. |
+| **Ease of Setup**                | One-command install, no config files required (very quick). ([Dockhand][1])                                         | Easy install but broader enterprise setup (agents/clusters). ([Portainer][2])       | Faster “zero friction” start for homelabs.                                            |
+| **Telemetry / Privacy**          | Zero telemetry and self-hosted only, so no data leaves your network. ([Dockhand][1])                                | Uses agent-based connection; may involve more built-in networking. ([Portainer][2]) | Better for privacy-conscious environments.                                            |
+| **User Interface (UI)**          | Modern, intuitive, built-from-scratch web UI. ([Dockhand][1])                                                       | GUI designed for broader orchestration tasks. ([Portainer][2])                      | Many users find Dockhand more *streamlined* and responsive.                           |
+| **Container Operations**         | Start/stop/restart, interactive web terminal, process/env view, file browser. ([Dockhand][1])                       | Equivalent container control with logs and metrics. ([Portainer][2])                | Dockhand’s terminal and file transfers are highly integrated without SSH.             |
+| **Docker Compose & Stacks**      | Visual editor, adopt external stacks, Git sync with webhooks. ([Dockhand][1])                                       | Stack management & templates, but config stored in DB. ([ITSC News][3])             | Dockhand’s *adopt stacks* and Git-first workflow can be simpler and more transparent. |
+| **GitOps / Auto-Deploy**         | Deploy from Git repos with auto-sync. ([Dockhand][1])                                                               | GitOps built-in for Docker/K8s. ([Portainer][2])                                    | Both have Git integration; Dockhand keeps it focused on Docker.                       |
+| **Security Features**            | Free OIDC/SSO, MFA, RBAC (Enterprise), LDAP/AD. ([Dockhand][1])                                                     | RBAC, SSO/OIDC, policy controls. ([Portainer][2])                                   | Similar security surface; Dockhand’s defaults aim to be comprehensive without cloud.  |
+| **Multi-host / Remote**          | Hawser agent for firewall/NAT traversal. ([Dockhand][1])                                                            | Agent-based multi-environment management. ([Portainer][2])                          | Both support remote; Dockhand’s Hawser focuses on simplicity and firewall traversal.  |
+| **Kubernetes Support**           | **No native Kubernetes support** (Docker-only). —                                                                   | **Full Kubernetes & multi-cluster** support. ([Portainer][2])                       | Portainer wins if you need Kubernetes — but Dockhand is lighter if you *don’t*.       |
+| **Resource Usage / Lightweight** | Very lightweight; minimal dependencies. ([Dockhand][1])                                                             | More components and backend (DB, broader ecosystem). ([ITSC News][3])               | Dockhand generally uses fewer resources and is faster on small hardware.              |
+| **Telemetry & Cloud Lock-in**    | Zero telemetry; strictly self-hosted. ([Dockhand][1])                                                               | Agent model with optional remote control. ([Portainer][2])                          | Better for environments that *must stay local and private*.                           |
+
+---
+
+### 🚀 Why Users Prefer Dockhand (Real Sentiment)
+
+• Many users report Dockhand feels more modern, intuitive, and *just works* compared to Portainer. ([Reddit][4])
+• Community feedback suggests easier navigation, quicker operations (prune, search, deploy), and responsive UI. ([Reddit][5])
+• Several users are switching from Portainer to Dockhand based on UX, performance, and features. ([Reddit][6])
+
+---
+
+### 🏁 Summary
+
+**Dockhand is better than Portainer if you want:**
+
+* A *modern, focused Docker manager* without Kubernetes overhead.
+* Simple setup, fast UI, and local first privacy.
+* Git-centric workflows and compose adoption without hidden YAML storage.
+
+**Portainer might still be better if you need:**
+
+* Kubernetes or multi-cluster orchestration.
+* Built-in enterprise governance at scale.
+
+---
+
 ## 💰 Pricing
 
 ### 🆓 Free Edition
