@@ -123,7 +123,7 @@ netstat -tlpn | grep 2375
 
 # 🧪 Test Docker Remote API
 # ℹ️ Get Docker info (remote)
-curl http://192.168.1.222:2375/info
+curl http://localhost:2375/info
 # 📦 List Docker images (local)
 curl http://localhost:2375/images/json
 ```
