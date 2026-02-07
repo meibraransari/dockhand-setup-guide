@@ -346,6 +346,7 @@ Dockhand is actively developed with new features being added regularly. Check th
 
 - 🌐 **Website:** [https://dockhand.pro/](https://dockhand.pro/)
 - 🌐 **Hawser Modes:** [https://dockhand.pro/manual/#hawser-modes](https://dockhand.pro/manual/#hawser-modes)
+- 🌐 **Hawser Github:** [https://github.com/Finsys/hawser](https://github.com/Finsys/hawser)
 - 🌐 **RBAC:** [https://dockhand.pro/manual/#enterprise-rbac](https://dockhand.pro/manual/#enterprise-rbac)
 - 🌐 **OIDC:** [https://dockhand.pro/manual/#appendix-oidc](https://dockhand.pro/manual/#appendix-oidc)
 - 🌐 **LDAP:** [https://dockhand.pro/manual/#appendix-ldap](https://dockhand.pro/manual/#appendix-ldap)
