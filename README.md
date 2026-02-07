@@ -122,10 +122,34 @@ sudo systemctl restart docker
 netstat -tlpn | grep 2375
 
 # 🧪 Test Docker Remote API
+# ℹ️ Get Docker info (remote)
+curl http://192.168.1.222:2375/info
 # 📦 List Docker images (local)
 curl http://localhost:2375/images/json
-# ℹ️ Get Docker info (remote)
-http://192.168.1.222:2375/info
+```
+
+
+```bash
+# Standard mode:
+docker run -d \
+  --name hawser \
+  --restart unless-stopped \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -p 2376:2376 \
+  -e TOKEN=your-secret-token \
+  ghcr.io/finsys/hawser:latest
+
+# Edge mode:
+docker run -d \
+  --name hawser \
+  --restart unless-stopped \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -e DOCKHAND_SERVER_URL=wss://your-dockhand.example.com/api/hawser/connect \
+  -e TOKEN=your-agent-token \
+  -e AGENT_NAME=my-server \
+  ghcr.io/finsys/hawser:latest
+
+# Ref: https://dockhand.pro/manual/#hawser
 ```
 ---
 
@@ -322,6 +346,11 @@ Dockhand is actively developed with new features being added regularly. Check th
 ## 📚 Resources
 
 - 🌐 **Website:** [https://dockhand.pro/](https://dockhand.pro/)
+- 🌐 **Hawser Modes:** [https://dockhand.pro/manual/#hawser-modes](https://dockhand.pro/manual/#hawser-modes)
+- 🌐 **RBAC:** [https://dockhand.pro/manual/#enterprise-rbac](https://dockhand.pro/manual/#enterprise-rbac)
+- 🌐 **OIDC:** [https://dockhand.pro/manual/#appendix-oidc](https://dockhand.pro/manual/#appendix-oidc)
+- 🌐 **LDAP:** [https://dockhand.pro/manual/#appendix-ldap](https://dockhand.pro/manual/#appendix-ldap)
+- 🌐 **API Reference:** [https://dockhand.pro/manual/#api-reference](https://dockhand.pro/manual/#api-reference)
 - 📦 **GitHub:** [https://github.com/Finsys/dockhand](https://github.com/Finsys/dockhand)
 - 📧 **Enterprise Support:** [enterprise@dockhand.pro](mailto:enterprise@dockhand.pro)
 - ☕ **Support Development:** [Buy me a coffee](https://buymeacoffee.com/dockhand)
