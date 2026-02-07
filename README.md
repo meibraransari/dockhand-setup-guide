@@ -150,6 +150,13 @@ docker run -d \
   -e AGENT_NAME=my-server \
   ghcr.io/finsys/hawser:latest
 ```
+
+
+###  🐳 Convert docker run command in compose
+```bash
+https://it-tools.tech/docker-run-to-docker-compose-converter
+```
+
 ---
 
 ## 🎯 Top Features
