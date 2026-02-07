@@ -103,7 +103,7 @@ volumes:
   dockhand_data:
 ```
 
-###  🐳 Enable Docker Remote API (Port 2375)
+###  🐳 Enable Docker Remote API "Direct Connection"
 
 ```bash
 # ✏️ Edit Docker systemd service
@@ -128,9 +128,8 @@ curl http://192.168.1.222:2375/info
 curl http://localhost:2375/images/json
 ```
 
-
+###  🐳 Enable Docker Remote API "Standard mode:"
 ```bash
-# Standard mode:
 docker run -d \
   --name hawser \
   --restart unless-stopped \
@@ -138,8 +137,10 @@ docker run -d \
   -p 2376:2376 \
   -e TOKEN=your-secret-token \
   ghcr.io/finsys/hawser:latest
+```
 
-# Edge mode:
+###  🐳 Enable Docker Remote API "Edge mode:"
+```bash
 docker run -d \
   --name hawser \
   --restart unless-stopped \
@@ -148,8 +149,6 @@ docker run -d \
   -e TOKEN=your-agent-token \
   -e AGENT_NAME=my-server \
   ghcr.io/finsys/hawser:latest
-
-# Ref: https://dockhand.pro/manual/#hawser
 ```
 ---
 
