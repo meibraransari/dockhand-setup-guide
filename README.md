@@ -6,6 +6,10 @@
 
 ---
 
+[![Watch on Youtube](https://i.ytimg.com/vi/LqSGZZGQv3E/maxresdefault.jpg)](https://youtu.be/LqSGZZGQv3E)
+
+---
+
 ## 🚀 What is Dockhand?
 
 Dockhand is a **modern, self-hosted Docker management platform** that provides real-time container management, Compose stacks, Git deployments, and SSO authentication - all in one beautiful interface. Say goodbye to YAML indentation headaches and hello to streamlined Docker operations!
@@ -359,8 +363,6 @@ Dockhand is actively developed with new features being added regularly. Check th
 - 🌐 **LDAP:** [https://dockhand.pro/manual/#appendix-ldap](https://dockhand.pro/manual/#appendix-ldap)
 - 🌐 **API Reference:** [https://dockhand.pro/manual/#api-reference](https://dockhand.pro/manual/#api-reference)
 - 📦 **GitHub:** [https://github.com/Finsys/dockhand](https://github.com/Finsys/dockhand)
-- 📧 **Enterprise Support:** [enterprise@dockhand.pro](mailto:enterprise@dockhand.pro)
-- ☕ **Support Development:** [Buy me a coffee](https://buymeacoffee.com/dockhand)
 
 ---
 
