@@ -152,7 +152,7 @@ docker run -d \
 ```
 
 
-###  🐳 Convert docker run command in compose
+###  🐳 Convert Docker run Command in Docker Compose
 ```bash
 https://it-tools.tech/docker-run-to-docker-compose-converter
 ```
